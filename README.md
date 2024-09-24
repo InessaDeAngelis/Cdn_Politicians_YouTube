@@ -16,19 +16,7 @@ can download the most recent version of this dataset here:
 
 Here is a sample of what the full dataset looks like:
 
-<table style="width:100%;">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-</colgroup>
+<table>
 <thead>
 <tr class="header">
 <th>
@@ -375,7 +363,7 @@ Commons](https://www.ourcommons.ca/Members/en/search)
 categorized by the [House of
 Commons](https://www.ourcommons.ca/Members/en/search)
 
-`Constituency`: Name of the MPs’ constituency (as of the 43rd
+`Constituency`: Name of the MPs’ constituency (as of the 44th
 Parliament, prior to redistribution)
 
 `Province/Territory`: Where the MPs’ constituency is located
