@@ -1,1 +1,394 @@
-# Cdn_Politicians_YouTube
+
+# Canadian Politicians on YouTube
+
+This repository contains a dataset with every Canadian Member of
+Parliament’s (MP) YouTube username, profile URL, account status, gender,
+political party affiliation, constituency, and province/territory. You
+can download the most recent version of this dataset here:
+
+<!-- badges: start -->
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12746969.svg)](https://doi.org/10.5281/zenodo.12746969)
+
+<!-- badges: end -->
+
+### Overview
+
+Here is a sample of what the full dataset looks like:
+
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>
+<p>
+honorific_title
+</p>
+</th>
+<th>
+<p>
+first_name
+</p>
+</th>
+<th>
+<p>
+last_name
+</p>
+</th>
+<th>
+<p>
+username
+</p>
+</th>
+<th>
+<p>
+profile_URL
+</p>
+</th>
+<th>
+<p>
+status
+</p>
+</th>
+<th>
+<p>
+gender
+</p>
+</th>
+<th>
+<p>
+political_affiliation
+</p>
+</th>
+<th>
+<p>
+constituency
+</p>
+</th>
+<th>
+<p>
+province_territory
+</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p>
+Hon.
+</p>
+</td>
+<td>
+<p>
+Michelle
+</p>
+</td>
+<td>
+<p>
+Rempel Garner
+</p>
+</td>
+<td>
+<p>
+MichelleRempelGarner
+</p>
+</td>
+<td>
+<p>
+<a href="https://www.youtube.com/@MichelleRempelGarner">https://www.youtube.com/MichelleRempelGarner</a>
+</p>
+</td>
+<td>
+<p>
+Active
+</p>
+</td>
+<td>
+<p>
+Woman
+</p>
+</td>
+<td>
+<p>
+Conservative
+</p>
+</td>
+<td>
+<p>
+Calgary Nose Hill
+</p>
+</td>
+<td>
+<p>
+Alberta
+</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p>
+NA
+</p>
+</td>
+<td>
+<p>
+Rachel
+</p>
+</td>
+<td>
+<p>
+Blaney
+</p>
+</td>
+<td>
+<p>
+rachelblaneyMP
+</p>
+</td>
+<td>
+<p>
+<br />
+<a href="https://www.youtube.com/@rachelblaneyMP">https://www.youtube.com/rachelblaneyMP</a>
+</p>
+</td>
+<td>
+<p>
+Active
+</p>
+</td>
+<td>
+<p>
+Woman
+</p>
+</td>
+<td>
+<p>
+NDP
+</p>
+</td>
+<td>
+<p>
+North Island-Powell River
+</p>
+</td>
+<td>
+<p>
+British Columbia
+</p>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<p>
+NA
+</p>
+</td>
+<td>
+<p>
+Mario
+</p>
+</td>
+<td>
+<p>
+Beaulieu
+</p>
+</td>
+<td>
+<p>
+mariobeaulieu5507
+</p>
+</td>
+<td>
+<p>
+<a href="https://www.youtube.com/@mariobeaulieu5507">https://www.youtube.com/mariobeaulieu5507</a>
+</p>
+</td>
+<td>
+<p>
+Inactive
+</p>
+</td>
+<td>
+<p>
+Man
+</p>
+</td>
+<td>
+<p>
+Bloc Québécois
+</p>
+</td>
+<td>
+<p>
+<br /> La Pointe-de-lÎle
+</p>
+</td>
+<td>
+<p>
+Quebec
+</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p>
+Hon.
+</p>
+</td>
+<td>
+<p>
+Steven
+</p>
+</td>
+<td>
+<p>
+Guilbeault
+</p>
+</td>
+<td>
+<p>
+Steven_Guilbeault
+</p>
+</td>
+<td>
+<p>
+<a href="https://www.youtube.com/@Steven_Guilbeault">https://www.youtube.com/Steven_Guilbeault</a>
+</p>
+</td>
+<td>
+<p>
+Active
+</p>
+</td>
+<td>
+<p>
+Man
+</p>
+</td>
+<td>
+<p>
+Liberal
+</p>
+</td>
+<td>
+<p>
+Laurier-Sainte-Marie
+</p>
+</td>
+<td>
+<p>
+Quebec
+</p>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<p>
+NA
+</p>
+</td>
+<td>
+<p>
+Darren
+</p>
+</td>
+<td>
+<p>
+Fisher
+</p>
+</td>
+<td>
+<p>
+darrenfishermp-dartmouthco7545
+</p>
+</td>
+<td>
+<p>
+<a href="https://www.youtube.com/@darrenfishermp-dartmouthco7545">https://www.youtube.com/darrenfishermp-dartmouthco7545</a>
+</p>
+</td>
+<td>
+<p>
+Inactive
+</p>
+</td>
+<td>
+<p>
+Man
+</p>
+</td>
+<td>
+<p>
+Liberal
+</p>
+</td>
+<td>
+<p>
+Dartmouth-Cole Harbour
+</p>
+</td>
+<td>
+<p>
+Nova Scotia
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Description of Columns
+
+`Honorific title`: MPs who are members of the Canadian Privy Council and
+use the title “The Honourable” (Hon.)
+
+`First name`: MPs’ first name
+
+`Last name`: MPs’ last name
+
+`Username`: MPs’ YouTube username
+
+`Profile URL`: URL for MPs’ YouTube account
+
+`Status`: Whether an MP’s YouTube account is *Active* or *Inactive*
+
+- `Active`: At least one short or full length video was posted in 2024
+
+- `Inactive`: The last short or full length video was posted in 2023 or
+  earlier
+
+`Gender`: MPs’ gender, as categorized by the [House of
+Commons](https://www.ourcommons.ca/Members/en/search)
+
+`Political Affiliation`: MPs’ political party affiliation, as
+categorized by the [House of
+Commons](https://www.ourcommons.ca/Members/en/search)
+
+`Constituency`: Name of the MPs’ constituency (as of the 43rd
+Parliament, prior to redistribution)
+
+`Province/Territory`: Where the MPs’ constituency is located
+
+### Citation
+
+Please use this recommended citation if you are using this dataset:
+
+> De Angelis, I. (2024). Canadian Politicians on YouTube \[Data set\].
+> Zenodo. <https://doi.org/10.5281/zenodo.12746968>
+
+### Author information
+
+Contact [**Inessa De
+Angelis**](mailto:Inessa.DeAngelis@mail.utoronto.ca) with any questions
+or corrections
